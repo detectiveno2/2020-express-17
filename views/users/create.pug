@@ -1,0 +1,19 @@
+extend ../layouts/common
+
+block content
+
+  h3.text-center.mt-4 Create user
+  .container
+    a.btn.btn-outline-secondary(href='/users') Back
+    if (error)
+      .alert.alert-danger.mt-4= error
+    form.form-group.mt-4(action='', method='post')
+      label(for='name') Name:
+      br
+      input.form-control(id='name', name='name', type='text')
+      br
+      label(for='phone') Phone:
+      br
+      input.form-control(id='phone', name='phone', type='text')
+      br
+      button.btn.btn-success Create

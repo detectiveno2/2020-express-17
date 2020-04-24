@@ -1,0 +1,20 @@
+extend ../layouts/common
+
+block content
+
+  h3.text-center.mt-4 Edit user
+  .container
+    a.btn.btn-outline-secondary(href='/books') Back
+    if (error)
+      .alert.alert-danger.mt-4= error
+    form.form-group.mt-4(action='/users/edit', method='post')
+      input(name='id', type='hidden', value=id)
+      label(for='name') New name:
+      br
+      input.form-control(id='name', name='name', type='text', value=oldName)
+      br
+      label(for='phone') New phone:
+      br
+      input.form-control(id='phone', name='phone', type='text', value=oldPhone)
+      br
+      button.btn.btn-success Update

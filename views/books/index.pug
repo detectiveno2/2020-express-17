@@ -1,0 +1,24 @@
+extend ../layouts/common
+
+block content
+
+  h2.text-center.mt-4 Your books self
+  .container
+    a.mb-4.btn.btn-success(href='/books/create') Add a new book
+    table.table
+      thead.thead-dark
+        tr
+          th.text-center Title
+          th.text-center Description
+          th.text-center Action
+        each book in books
+          tr
+            td.text-center= book.title
+            td.text-center= book.description
+            td.text-center
+              .btn-group.btn-group-sm
+                a.btn.btn-primary(href='/books/edit/' + book.id) Edit
+                a.btn.btn-primary(href='/books/delete/' + book.id) Delete
+
+
+
