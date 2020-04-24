@@ -1,0 +1,21 @@
+extend ../layouts/common
+
+block content
+
+  h3.text-center.mt-4 Create transaction
+  .container
+    a.btn.btn-outline-secondary(href='/transactions') Back
+    form.form-group.mt-4(action='', method='post')
+      label(for='user') User:
+      span &nbsp
+      select(id='user', name='userId')
+        each user in users
+          option(value=user.id)= user.name
+      br
+      label(for='book') Label:
+      span &nbsp
+      select(id='book', name='bookId')
+        each book in books
+          option(value=book.id)= book.title
+      br
+      button.btn.btn-success.mt-4 Create

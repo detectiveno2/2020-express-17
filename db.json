@@ -1,0 +1,99 @@
+{
+  "books": [
+    {
+      "title": "Nobita vs Doraemon",
+      "description": "Cuộc phiêu lưu nhàm chán",
+      "id": "ri2xch2ed"
+    },
+    {
+      "title": "THINK & GROW RICH",
+      "description": "Cuốn sách làm giàu hay nhất mọi thời đại",
+      "id": "gAu8sc-4P"
+    },
+    {
+      "title": "Cuộc phiêu lưu của Sinbad",
+      "description": "Lại một cuộc phiêu lưu nhàm chán",
+      "id": "0eeccelRs"
+    },
+    {
+      "title": "Tiếng việt lớp 10 cơ bản",
+      "description": "Sách giáo khoa lớp 10",
+      "id": "_xRjWZTqy"
+    }
+  ],
+  "users": [
+    {
+      "name": "Trung",
+      "phone": "0574869587",
+      "id": "kvaHoNawF",
+      "email": "nguyentrung@gmail.com",
+      "password": "$2b$10$VtdrhMxih9D.L0.ViygG6ua3o9eDvm1mk2VEelbWbvewYD7MRgaze"
+    },
+    {
+      "name": "Hieu",
+      "phone": "0896758394",
+      "id": "DQ2AFkdQN",
+      "email": "nguyenhieu@gmail.com",
+      "password": "$2b$10$VtdrhMxih9D.L0.ViygG6ua3o9eDvm1mk2VEelbWbvewYD7MRgaze"
+    },
+    {
+      "name": "Thien",
+      "phone": "0782367185",
+      "id": "vcV_t16pg",
+      "email": "nguyenthien@gmail.com",
+      "password": "$2b$10$VtdrhMxih9D.L0.ViygG6ua3o9eDvm1mk2VEelbWbvewYD7MRgaze",
+      "isAdmin": true
+    },
+    {
+      "name": "Hoc",
+      "phone": "0483958674",
+      "id": "MGVGqo5re",
+      "email": "nguyenhoc@gmail.com",
+      "password": "$2b$10$VtdrhMxih9D.L0.ViygG6ua3o9eDvm1mk2VEelbWbvewYD7MRgaze"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "EIahBhEhQ",
+      "content": "Trung got Nobita vs Doraemon.",
+      "userId": "kvaHoNawF",
+      "bookId": "ri2xch2ed",
+      "isComplete": false
+    },
+    {
+      "id": "Vs8sBv-2T",
+      "content": "Trung got THINK & GROW RICH.",
+      "userId": "kvaHoNawF",
+      "bookId": "gAu8sc-4P",
+      "isComplete": false
+    },
+    {
+      "id": "tprosiJ7j",
+      "content": "Hieu got Cuộc phiêu lưu của Sinbad.",
+      "userId": "DQ2AFkdQN",
+      "bookId": "0eeccelRs",
+      "isComplete": false
+    },
+    {
+      "id": "CKCaswbsq",
+      "content": "Thien got Cuộc phiêu lưu của Sinbad.",
+      "userId": "vcV_t16pg",
+      "bookId": "0eeccelRs",
+      "isComplete": true
+    },
+    {
+      "id": "PrNVA49xj",
+      "content": "Hieu got Cuộc phiêu lưu của Sinbad.",
+      "userId": "DQ2AFkdQN",
+      "bookId": "0eeccelRs",
+      "isComplete": false
+    },
+    {
+      "id": "s2wePbRl4",
+      "content": "Hoc got Tiếng việt lớp 10 cơ bản.",
+      "userId": "MGVGqo5re",
+      "bookId": "_xRjWZTqy",
+      "isComplete": false
+    }
+  ]
+}

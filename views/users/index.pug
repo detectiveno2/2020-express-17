@@ -1,0 +1,21 @@
+extend ../layouts/common
+
+block content
+
+  h2.text-center.mt-4 Your users
+  .container
+    a.mb-4.btn.btn-success(href='users/create') Add a new user
+    table.table
+      thead.thead-dark
+        tr
+          th.text-center Name
+          th.text-center Phone
+          th.text-center Action
+        each user in users
+          tr
+            td.text-center= user.name
+            td.text-center= user.phone
+            td.text-center
+              .btn-group.btn-group-sm
+                a.btn.btn-primary(href='users/edit/' + user.id) Edit
+                a.btn.btn-primary(href='users/delete/' + user.id) Delete

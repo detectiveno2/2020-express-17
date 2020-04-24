@@ -1,0 +1,16 @@
+extend ../layouts/common
+
+block content
+
+  h2.text-center.mt-4 Your transactions
+  .container
+    a.btn.btn-success(href='/transactions/create') Create transaction
+    ul.border.border-secondary.p-4.list-unstyled.rounded-sm.mt-4
+      each transaction in transactions
+        li.my-4
+          span= transaction.content
+          span &nbsp
+          if transaction.isComplete
+            span.badge.badge-success Completed!
+          else
+            a.btn.btn-primary.btn-sm(href='/transactions/complete/' + transaction.id) Done
