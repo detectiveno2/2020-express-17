@@ -15,6 +15,15 @@ module.exports.postLogin = (req, res) => {
     .find({ email: email })
     .value();
 
+  if (user.wrongLoginCount > 3) {
+    res.render("auth/login", {
+      error: "Your account is locked."
+    });
+    return;
+  }
+
+  console.log(user.wrongLoginCount);
+
   if (!user) {
     res.render("auth/login", {
       error: "User does not exist."
@@ -23,16 +32,21 @@ module.exports.postLogin = (req, res) => {
   }
 
   bcrypt.compare(password, user.password, (err, result) => {
-    console.log(result);
     if (result === false) {
+      let newValue = (user.wrongLoginCount += 1);
+      db.get("users")
+        .find({ id: user.id })
+        .assign({ wrongLoginCount: newValue })
+        .write();
       res.render("auth/login", {
         error: "Wrong password.",
         values: req.body
       });
+
       return;
     }
 
-    res.cookie("userId", user.id, { signed: true });
+    res.cookie("userId", user.id);
 
     res.redirect("/users");
   });

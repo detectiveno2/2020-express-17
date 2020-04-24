@@ -27,14 +27,16 @@
       "phone": "0574869587",
       "id": "kvaHoNawF",
       "email": "nguyentrung@gmail.com",
-      "password": "$2b$10$VtdrhMxih9D.L0.ViygG6ua3o9eDvm1mk2VEelbWbvewYD7MRgaze"
+      "password": "$2b$10$VtdrhMxih9D.L0.ViygG6ua3o9eDvm1mk2VEelbWbvewYD7MRgaze",
+      "wrongLoginCount": 0
     },
     {
       "name": "Hieu",
       "phone": "0896758394",
       "id": "DQ2AFkdQN",
       "email": "nguyenhieu@gmail.com",
-      "password": "$2b$10$VtdrhMxih9D.L0.ViygG6ua3o9eDvm1mk2VEelbWbvewYD7MRgaze"
+      "password": "$2b$10$VtdrhMxih9D.L0.ViygG6ua3o9eDvm1mk2VEelbWbvewYD7MRgaze",
+      "wrongLoginCount": 0
     },
     {
       "name": "Thien",
@@ -42,6 +44,7 @@
       "id": "vcV_t16pg",
       "email": "nguyenthien@gmail.com",
       "password": "$2b$10$VtdrhMxih9D.L0.ViygG6ua3o9eDvm1mk2VEelbWbvewYD7MRgaze",
+      "wrongLoginCount": 0,
       "isAdmin": true
     },
     {
@@ -49,7 +52,8 @@
       "phone": "0483958674",
       "id": "MGVGqo5re",
       "email": "nguyenhoc@gmail.com",
-      "password": "$2b$10$VtdrhMxih9D.L0.ViygG6ua3o9eDvm1mk2VEelbWbvewYD7MRgaze"
+      "password": "$2b$10$VtdrhMxih9D.L0.ViygG6ua3o9eDvm1mk2VEelbWbvewYD7MRgaze",
+      "wrongLoginCount": 4
     }
   ],
   "transactions": [
